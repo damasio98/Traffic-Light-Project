@@ -1,7 +1,6 @@
 #Problemas: Uma coisa que não consegui corrigir foi que após entrar em estado intermitente, o circuito só volta a um semáforo normal após completar um ciclo de 9 segundos.Se premirmos o botão quando t(led verde)=4s, então teremos de esperar 5s para conseguirmos que ele volte ao normal.  
 #Podemos carregar no botão que nada acontece. Acho que isto se deve a um ciclo que é apanhado no meio (provavelmente a ver com a luz verde devido ao tempo) mas não consegui identificar e corrigir o erro.
 
-
 from utime import ticks_ms,sleep_ms
 from machine import Pin
 led_red = Pin(21, Pin.OUT)
